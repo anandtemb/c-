@@ -31,3 +31,17 @@ int main() {
     cin>>x;
     cout<<binarySearch(arr,x);
 }
+   int n;
+    cin>>n;
+    vector<int> arr(n);
+    for(int i=0; i<n; i++){
+        cin>>arr[i];
+        arr[i]=(arr[i]*arr[i]);
+        sort(arr.begin(), arr.begin()+i);
+        
+    }
+    for(int j=0; j<n; j++){
+        cout<<arr[j]<<" ";
+    }
+    
+}
